@@ -9,9 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println("==")
-	fmt.Println("==", "Go Websocket Bench")
-	fmt.Println("==")
+	fmt.Println("==\n==", "Go Websocket Bench", "\n==")
 	
 	host := "http://127.0.0.1:4567"
 	
@@ -21,8 +19,6 @@ func main() {
 		fmt.Println("ERROR:", err)
 		return
 	}
-
-	fmt.Println(req.Method)
 	
 	var standard WebsocketStandard = new(WebsocketStandard_13)
 	
