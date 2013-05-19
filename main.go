@@ -49,11 +49,6 @@ type WebsocketStandard interface {
 	VerifyResponse(resp http.Response) bool
 }
 
-type WebsocketType struct {
-	version int
-	standard WebsocketStandard
-}
-
 type WebsocketStandard_13 struct {}
 
 func (s WebsocketStandard_13) AddHeaders(req *http.Request) {
